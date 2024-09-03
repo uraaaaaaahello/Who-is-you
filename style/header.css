@@ -12,18 +12,19 @@
        /* top-nav style */
 .container > header > nav > .top-nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: var(--nav-footer-color);
-    padding: var(--padd);
-    padding: 33px 180px;
+    padding: 30px 180px;
 }
 .container > header > nav > .top-nav > .logo {
     width: 250px;
     padding-bottom: 5px;
 }
 .container > header > nav > .top-nav > .logo > img {
-    width: 100%;
+    /* width: 100%; */
     transition: 0.3s ease-in-out;
+    width: 250px;
 }
 .container > header > nav > .top-nav > .menu-top {
     display: flex;
@@ -36,8 +37,9 @@
     font-size: 11px;
     font-weight: 500;
     display: flex;
-   align-items: center;
+    align-items: center;
     cursor: pointer;
+    position: relative;
 }
 .container > header > nav > .top-nav > .menu-top > li > img {
     border: 1px solid white;
@@ -49,9 +51,6 @@
     font-size: 14px;
     vertical-align: middle;
 }
-.container > header > nav > .top-nav > .menu-top > li:hover > #down {
-    transform: rotate(180deg) translateY(1px);
-}
 .container > header > nav > .top-nav > .menu-top > li > .dropdown {
     position: absolute;
     list-style: none;
@@ -62,7 +61,7 @@
     overflow: hidden;
     background-color: var(--menu-color);
     text-align: end;
-    transition: none;
+    transition: 0.2s ease-in-out;
 }
 .container > header > nav > .top-nav > .menu-top > li > .dropdown > li {
     padding: 12px 10px;
@@ -70,6 +69,12 @@
 .container > header > nav > .top-nav > .menu-top > li > .dropdown > li > a {
     color: white;
     text-decoration: none;
+}
+
+
+   /* --------------- hover effect ------------- */
+.container > header > nav > .top-nav > .menu-top > li:hover > #down {
+    transform: rotate(180deg) translateY(1px);
 }
 .container > header > nav > .top-nav > .menu-top > li:hover {
     background-color: var(--menu-color);
